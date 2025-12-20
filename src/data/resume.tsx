@@ -31,6 +31,7 @@ export const DATA = {
     "gRPC",
     "n8n",
     "OpenAI",
+    "RAG",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -138,6 +139,22 @@ export const DATA = {
   //   },
   // ],
   projects: [
+    {
+      title: "DocuTalk - Chat with your PDF",
+      href: "https://pdfchat.vvssgowtham.dev/",
+      dates: "Dec 2025",
+      active: true,
+      description: "AI-powered PDF chat application that allows users to upload documents and ask questions in natural language. Uses a Retrieval-Augmented Generation (RAG) architecture with vector embeddings and semantic search to deliver accurate, context-aware, real-time responses.",
+      technologies: ["React.js", "Express.js", "MongoDB", "Hugging Face Inference"],
+      links: [
+        {
+          type: "Website",
+          href: "https://pdfchat.vvssgowtham.dev/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/chatwithpdf.png",
+    },
     {
       title: "n8n Gmail Summarizer",
       href: "https://n8n-gmail.vvssgowtham.dev/",
